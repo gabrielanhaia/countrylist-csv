@@ -1,0 +1,22 @@
+{
+  "name": "gabrielanhaia/countrylist-csv",
+  "description": "Geração de relatórios (CSV) de forma fácil.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel Anhaia",
+      "email": "anhaia.gabriel@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6"
+  },
+  "autoload": {
+    "psr-4": {
+      "CountrylistCsv\\": "src/"
+    }
+  }
+}
