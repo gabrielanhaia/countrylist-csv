@@ -14,7 +14,7 @@ abstract class Generator
     protected $rawData;
 
     /** @var mixed $generatedData Dados gerados. */
-    protected $generatedData;
+    protected $generatedData = '';
 
     /** @var string $fileNameDownload Nome do arquivo a ser baixado. */
     protected $fileNameDownload;
