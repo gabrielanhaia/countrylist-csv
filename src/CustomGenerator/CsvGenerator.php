@@ -59,15 +59,16 @@ class CsvGenerator extends Generator
     }
 
     /**
-     * Método responsável por definir os headers caso o arquivo queira ser baixado.
-     *
-     * @return mixed
+     * Retorna os headers de download do arquivo.
+     * @return array
      */
-    protected function defineHeadersDownload()
+    public function getHeadersDownload(): array
     {
-        header('Content-Disposition: attachment; filename="' . "{$this->fileNameDownload}.{$this->textExtension}" . '"');
-        header('Content-Type: text/plain');
-        header('Connection: close');
+        return [
+            'Content-Disposition: attachment; filename="' . "{$this->fileNameDownload}.{$this->textExtension}" . '"',
+            'Content-Type: text/plain',
+            'Connection: close'
+        ];
     }
 
     /**

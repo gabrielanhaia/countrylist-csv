@@ -52,7 +52,18 @@ abstract class Generator
      *
      * @return mixed
      */
-    abstract protected function defineHeadersDownload();
+    protected function defineHeadersDownload()
+    {
+        foreach ($this->getHeadersDownload() as $header) {
+            header($header);
+        }
+    }
+
+    /**
+     * Retorna os headers de download do arquivo.
+     * @return array
+     */
+    abstract public function getHeadersDownload(): array;
 
     /**
      * Método responsável por gerar o arquivo de acordo com $rawData.
