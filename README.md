@@ -2,4 +2,6 @@
 CSV generatos of country listing. 
 
 # Install
-```composer require gabrielanhaia/countrylist-csv
+```sh
+composer require gabrielanhaia/countrylist-csv
+```
